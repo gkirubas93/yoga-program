@@ -1,282 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Artistic Yoga</title>
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <style>
-      .navbar-nav .nav-item .nav-link {
-        margin-right: 15px;
-      }
 
-      .profile-pic {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artistic Yoga</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .navbar-nav .nav-item .nav-link {
+      margin-right: 15px;
+    }
 
-      .bg-light {
-        background-color: #fff3e9 !important;
-      }
+    .profile-pic {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
 
-      .section-bg {
-        background-color: #fdf8f4 !important;
-      }
+    .bg-light {
+      background-color: #fff3e9 !important;
+    }
 
-      .section-bg-color {
-        background-color: #fff3e9 !important;
-      }
+    .section-bg {
+      background-color: #fdf8f4 !important;
+    }
 
-      ul {
-        align-items: center;
-      }
+    .section-bg-color {
+      background-color: #fff3e9 !important;
+    }
 
-      .section-padding {
-        padding-top: 75px;
-        padding-bottom: 75px;
-      }
+    ul {
+      align-items: center;
+    }
 
-      .margin-top-150 {
-        margin-top: 150px;
-      }
+    .section-padding {
+      padding-top: 75px;
+      padding-bottom: 75px;
+    }
 
-      .rounded-box {
-        width: 500px;
-        height: 300px;
-        background-color: #9b9b9b;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        position: relative;
-      }
-      .play-icon {
-        font-size: 3rem;
-        color: #ffffff;
-      }
-      .title {
-        position: absolute;
-        top: 10px;
-        left: 5px;
-        padding: 0 10px;
-        font-weight: normal;
-      }
+    .margin-top-150 {
+      margin-top: 150px;
+    }
 
-      a {
-        color: black;
-        text-decoration: none;
-        background-color: transparent;
-      }
+    .rounded-box {
+      width: 500px;
+      height: 300px;
+      background-color: #9b9b9b;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
 
-      .nav-pills .nav-link.active,
-      .nav-pills .show > .nav-link {
-        color: red;
-        background-color: #007bff00;
-        border-bottom: 1px solid !important;
-      }
+    .play-icon {
+      font-size: 3rem;
+      color: #ffffff;
+    }
 
-      .colored-text {
-        color: red;
-      }
+    .title {
+      position: absolute;
+      top: 10px;
+      left: 5px;
+      padding: 0 10px;
+      font-weight: normal;
+    }
 
-      .rounded {
-        border-radius: 1.25rem !important;
-      }
+    a {
+      color: black;
+      text-decoration: none;
+      background-color: transparent;
+    }
 
-      .gradient-button {
-        background-image: linear-gradient(to bottom right, #fe5266, #fe5268);
-        border: none;
-      }
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+      color: red;
+      background-color: #007bff00;
+      border-bottom: 1px solid !important;
+    }
 
-      .border-button {
-        color: red;
-        border-color: red;
-      }
+    .colored-text {
+      color: red;
+    }
 
-      .btn {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-right: 20px;
-      }
+    .rounded {
+      border-radius: 1.25rem !important;
+    }
 
-      nav {
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-      }
+    .gradient-button {
+      background-image: linear-gradient(to bottom right, #fe5266, #fe5268);
+      border: none;
+    }
 
-      .mt-15 {
-        margin-top: 15px;
-      }
+    .border-button {
+      color: red;
+      border-color: red;
+    }
 
-      .pad-15 {
-        padding-left: 15px;
-      }
+    .btn {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-right: 20px;
+    }
 
-      .normal-text {
-        font-weight: normal !important;
-        padding: 0px;
-      }
+    nav {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    }
 
-      .accent-text {
-        color: red;
-      }
+    .mt-15 {
+      margin-top: 15px;
+    }
 
-      .baseline {
-        align-items: baseline !important;
-      }
+    .pad-15 {
+      padding-left: 15px;
+    }
 
-      .inline {
-        display: inline-block;
-      }
+    .normal-text {
+      font-weight: normal !important;
+      padding: 0px;
+    }
 
-      .margin-top-100 {
-        margin-top: 100px;
-      }
-      .chart {
-        width: 300px;
-        height: 250px;
-        margin: auto;
-        display: block;
-        text-align: center;
-      }
-      .image-button {
-        width: 30px;
-        height: 30px;
-        color: red;
-      }
+    .accent-text {
+      color: red;
+    }
 
-      .box {
-        width: 500px;
-        height: 300px;
-        background-color: #9b9b9b;
-        border-radius: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        position: relative;
-      }
-      .drop-down {
-        background-color: white;
-        color: black;
-        position: absolute;
-        margin-top: 50px;
-        margin-left: 120px;
-      }
+    .baseline {
+      align-items: baseline !important;
+    }
 
-      .carousel-item {
-        min-height: 200px; /* Adjust height as needed */
-      }
-      .content {
-        border: 1px solid #ddd;
-        padding: 20px;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.2rem;
-      }
-      .list-group-item {
-        cursor: pointer;
-        background-color: transparent;
-        color: black;
-        border: 0px;
-      }
-      .list-group-item.active {
-        background-color: transparent;
-        color: red;
-      }
+    .inline {
+      display: inline-block;
+    }
 
-      .carousal-content {
-        width: 100%;
-        height: 300px;
-        background-color: #9b9b9b;
-        border-radius: 15px;
-      }
+    .margin-top-100 {
+      margin-top: 100px;
+    }
 
-      .pic-box {
-        width: 30px;
-        height: 130px;
-        margin: 50px;
-        background-color: red;
-        border-radius: 15px;
-      }
-      .carousal-content > p {
-        margin-top: 50px;
-      }
+    .chart {
+      width: 300px;
+      height: 250px;
+      margin: auto;
+      display: block;
+      text-align: center;
+    }
 
-      .align-right {
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: nowrap;
-        margin-right: -15px;
-        margin-left: -15px;
-        justify-content: flex-end;
-        align-content: center;
-        flex-direction: row;
-        margin: 10px;
-      }
+    .image-button {
+      width: 30px;
+      height: 30px;
+      color: red;
+    }
 
-      .divider {
-        background-color: black;
-        height: 1px;
-        width: 100%;
-      }
+    .box {
+      width: 500px;
+      height: 300px;
+      background-color: #9b9b9b;
+      border-radius: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
 
-      .small-icon {
-        width: 5px;
-        height: 5px;
-        vertical-align: middle;
-      }
-    </style>
-  </head>
-  <body>
-    <app-root></app-root>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    .drop-down {
+      background-color: white;
+      color: black;
+      position: absolute;
+      margin-top: 50px;
+      margin-left: 120px;
+    }
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
-      integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    .carousel-item {
+      min-height: 200px;
+      /* Adjust height as needed */
+    }
 
-    <script>
-      $(document).ready(function () {
-        $("#carouselExampleIndicators").on(
-          "slide.bs.carousel",
-          function (event) {
-            var index = $(event.relatedTarget).index();
-            $("#carousel-indicators .list-group-item").removeClass("active");
-            $("#carousel-indicators .list-group-item")
-              .eq(index)
-              .addClass("active");
-          }
-        );
+    .content {
+      border: 1px solid #ddd;
+      padding: 20px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
 
-        $("#carousel-indicators .list-group-item").click(function () {
-          var index = $(this).data("slide-to");
-          $("#carouselExampleIndicators").carousel(index);
-        });
+    .list-group-item {
+      cursor: pointer;
+      background-color: transparent;
+      color: black;
+      border: 0px;
+    }
+
+    .list-group-item.active {
+      background-color: transparent;
+      color: red;
+    }
+
+    .carousal-content {
+      width: 100%;
+      height: 300px;
+      background-color: #9b9b9b;
+      border-radius: 15px;
+    }
+
+    .pic-box {
+      width: 30px;
+      height: 130px;
+      margin: 50px;
+      background-color: red;
+      border-radius: 15px;
+    }
+
+    .carousal-content>p {
+      margin-top: 50px;
+    }
+
+    .align-right {
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: nowrap;
+      margin-right: -15px;
+      margin-left: -15px;
+      justify-content: flex-end;
+      align-content: center;
+      flex-direction: row;
+      margin: 10px;
+    }
+
+    .small-icon {
+      width: 5px;
+      height: 5px;
+      vertical-align: middle;
+    }
+
+    .flex-right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .m-e-10 {
+      margin-left: 10px;
+    }
+
+    .divider {
+      background-color: black;
+      height: 1px;
+    }
+
+    .bold-color-text {
+      font-weight: bold;
+      color: #FE5268;
+    }
+
+    .big-text {
+      font-size: 65px;
+      margin-left: 5px;
+    }
+
+    .profile-container {
+      display: flex;
+      position: relative;
+      justify-content: space-evenly;
+      align-items: baseline;
+      width: 200px;
+      height: 200px;
+      align-content: center;
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
+
+    .profile-pic-large {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .edit-button {
+      top: 50%;
+      left: 50%;
+      color: white;
+      background-color: black;
+      border-radius: 50%;
+      padding: 15px;
+      transform: translate(-50%, -50%);
+    }
+
+    .color-pink {
+      color: #FE5268;
+    }
+
+    .dropdown-menu {
+      right: 0;
+      left: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <app-root></app-root>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+    integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#carouselExampleIndicators").on(
+        "slide.bs.carousel",
+        function (event) {
+          var index = $(event.relatedTarget).index();
+          $("#carousel-indicators .list-group-item").removeClass("active");
+          $("#carousel-indicators .list-group-item")
+            .eq(index)
+            .addClass("active");
+        }
+      );
+
+      $("#carousel-indicators .list-group-item").click(function () {
+        var index = $(this).data("slide-to");
+        $("#carouselExampleIndicators").carousel(index);
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
